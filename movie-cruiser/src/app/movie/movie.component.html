@@ -1,0 +1,26 @@
+<md-grid-list cols="3" rowHeight="1:1.40" class="grid">
+<div  *ngFor="let movie of movies">
+ <md-grid-tile>
+<md-card>
+ <md-card-header>
+    <md-card-title>Title : {{ movie. Title }}</md-card-title>
+    <md-card-title>Year : {{ movie.Year }}</md-card-title>
+    <md-card-subtitle>Id : {{ movie.imdbID }}</md-card-subtitle>
+  </md-card-header> 
+  <img md-card-image src="{{ movie.Poster }}" >
+  <md-card-content>
+        <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia, tempore ab deserunt eos rerum, dolores quo libero, vitae natus omnis explicabo, minima dolorem distinctio nobis deleniti nostrum voluptate illum?
+       </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE<md-icon svgIcon="thumbs-up"></md-icon></button>
+    <button md-button>SHARE</button>
+     </md-card-actions>
+    <md-input-container>
+      <input mdInput placeholder="comments">
+    </md-input-container>
+</md-card>
+</md-grid-tile>
+</div>
+</md-grid-list>
